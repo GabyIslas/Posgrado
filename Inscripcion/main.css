@@ -10,36 +10,6 @@ body{
     font-size: 18px;
 }
 
-/*Encabezado*/
-
-*{
-    margin:0;
-    padding: 0;
-    grid-template-columns: 1fr 1fr;
-
-   }
-
-   .iconos_container{
-    display: flex;
-    background-color: #F4FAF6;
-    padding: 10px 30px 0 10px;
-    margin: 0;
-    overflow: hidden;
-   }
-
-   .iconos_container .imgicono{
-        padding: 0 0 0 0;
-        background: #F4FAF6;
-        margin: 0;
-        overflow: hidden;
-        display: flex;
-       }
-
-   .row_iconhead{
-    background-color: #F4FAF6;
-    padding: 0 200px;
-   }
-
    /* Menu */
    .wrapper{
     background: #000;
