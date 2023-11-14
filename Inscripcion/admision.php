@@ -32,7 +32,12 @@
         $dataIdioma = $stmt->get_result();
         }
         $stmt->close();
-   
+    if($stmt = $cnx->prepare("CALL ConsultaLgac")){
+        $stmt->execute();
+        $dataLgac = $stmt->get_result();
+        }
+        $stmt->close();
+
        /*  function LlenaAlcaldia() {
             echo $identidad;
             echo $identidadSeleccionada;
@@ -74,10 +79,8 @@
                 conexion.onreadystatechange=function(){
                 if conexion.reaadystate== 4 
                 }
-
             }
     </script>
-
 </head>
 <body>
     <header>
@@ -115,22 +118,27 @@
                             <?php endforeach ?>    
                         </select>
                     </p>
-                    <p>
+                    <!-- <p>
                         <label for="">Fecha de solicitud:</label>
                         <input type="date" id="start" name="datesol" value="2023-08-01" min="2023-08-01" max="2023-12-20" />
+                    </p> -->
+                    <p>
+                        <label for="">Foto:</label>
+                        <input type="file" name="imagensubida" accept="image/png, .jpeg, .jpg">
                     </p>
                     <p>
-                        <label for="fullname">Apellidos:</label>
-                        <input type="text" name="lastname" id="lastname" placeholder="Ej.: García Martínez">
+                        <label for="fullname">Apellido Paterno:</label>
+                        <input type="text" name="ApPaterno" id="ApPaterno" placeholder="Ej.: García">
+                    </p>
+                    <p>
+                        <label for="fullname">Apellido Materno:</label>
+                        <input type="text" name="ApMaterno" id="ApMaterno" placeholder="Ej.: Martínez">
                     </p>
                     <p>
                         <label for="">Nombre (s):</label>
                         <input type="text" name="name" placeholder="Ej.: María Elena">
                     </p>
-                    <p>
-                        <label for="">Foto:</label>
-                        <input type="file" name="imagensubida" accept="image/png, .jpeg, .jpg">
-                    </p>
+                    
                     <p>
                         <label for="">Fecha de nacimiento:</label>
                         <input type="date" id="start" name="datenac" value="2005-07-22" min="1920-01-01" max="#">
@@ -161,8 +169,12 @@
                     </td>
                     </p>
                     <p>
-                        <label for="">Calle y numero:</label>
-                        <input type="text" name="callenum" placeholder="Av. Instituto Tecnológico">
+                        <label for="">Calle:</label>
+                        <input type="text" name="calle" placeholder="Av. Instituto Tecnológico">
+                    </p>
+                    <p>
+                        <label for="">Numero:</label>
+                        <input type="text" name="num" placeholder="115">
                     </p>
                     <p>
                         <label for="">Colonia:</label>
@@ -240,7 +252,7 @@
                                 <label for="tel">Idioma</label>
                                 <select name="Pais" class ="form-control">
                                     <?php foreach ($dataIdioma as $datos):?>
-                                    <option value="<?php echo $datos['idIdioma']?>"><?php echo $datos['NomIdioma']?></option>
+                                        <option value="<?php echo $datos['ididioma']?>"><?php echo $datos['NomIdioma']?></option>
                                     <?php endforeach ?>     
                                 </select>
                             </p>
@@ -265,8 +277,12 @@
                                 <input type="text" name="activi" placeholder="Ej.: Ingeniero en software">
                             </p>
                             <p class="block">
-                                <label for="carrera">Línea de generación y/o aplicación del conocimiento de su preferencia (LGAC) (7):</label>
-                                <input type="text" name="linea" placeholder="Ej.: Ingeniero en software">
+                            <label for="carrera">Línea de generación y/o aplicación del conocimiento de su preferencia (LGAC) (7):</label>
+                                <select name="Pais" class ="form-control">
+                                <?php foreach ($dataLgac as $datos):?>
+                                    <option value="<?php echo $datos['idLgac']?>"><?php echo $datos['NomLgac']?></option>
+                                <?php endforeach ?>     
+                            </select>  
                             </p>
                             <p class="block">
                                 <label for="carrera">Datos de persona de contacto. (nombre, dirección, correo electrónico y teléfono) (8):</label>
