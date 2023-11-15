@@ -392,6 +392,22 @@ body{
     grid-column: 1 / 3;
 }
 
+/*Correo*/
+
+.contact-form form .uper{
+  text-transform: none;
+}
+
+/*Subir imagenes y pdf*/
+
+.contact-form form .imdoc{
+  text-transform: none;
+  border-bottom: none;
+  padding: 0;
+  width: 50%;
+  grid-template-columns: 1fr;
+}
+
 /*footer*/
 
 footer{
