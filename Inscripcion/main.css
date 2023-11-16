@@ -13,7 +13,6 @@
 }
 
 /*Boton flotante*/
-
 .flotante {
   display:scroll;
       position:fixed;
@@ -22,7 +21,6 @@
 }
 
  /* Encabezado e iconos */
-
  .iconos_container{
   display: flex;
   background-color: #F4FAF6;
