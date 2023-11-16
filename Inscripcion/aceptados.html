@@ -7,7 +7,6 @@
     <title>Lista de Aspirantes</title>
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="img/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
         <!--CUSTOM CSS-->
     <link rel="stylesheet" href="main.css">
 </head>
@@ -107,6 +106,7 @@
             <form action="#" method="post">
                 <section class="flex-box block">
                     <div class="custom-combobox">
+                        <p class="block">
                         <label for="">Maestria:</label>
                         <input type="text" placeholder="Selecciona" class="combo-input" readonly required>
                         <ul class="combo-list">
@@ -116,11 +116,7 @@
                         </ul>
                       </div>
                 </section>
-                <section>
-                    <label for="">Fecha de Inscripción</label>
-                    <input type="date" id="start" name="trip-start" min="2022-01-01" max="#" />
-                </section>
-
+            </p>
                   <div class="altas block-dt">
                     <table>
                         <tr class="table-title">
@@ -165,11 +161,12 @@
                         </tr>
                     </table>
                   </div>
-                  <br>
                   <section class="block-btn">
+                    <p class="block">
                       <button type="submit" class="btn-submit" >
                           <a href="alta.html">Generar Lista</a>
                       </button>
+                    </p>
                   </section>
             </form>
 
