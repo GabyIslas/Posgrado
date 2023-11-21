@@ -11,26 +11,92 @@
     <link rel="stylesheet" href="css/mainacepta.css">
 </head>
 <body>
+    <!--Encabezado e iconos-->
     <header>
         <section class="iconos_container">
-        <div class="imgicono"> <img src="img/pleca-gob.jpeg" width="800" height="120"/></div>
+        <div class="imgicono"> <img src="img/union.png" width="700" height="120"/></div>
     </div>
-    <div class="icon-direccion col-md-4 col-lg-4 col-xl-4 ">
-    <div class="row_iconhead">
-    <a href='https://login.microsoftonline.com/' target='new'><span class='iconsp' title='Correo'><img src="img/correo.svg" alt=""><i class='fa fa-envelope' aria-hidden='true'></i></span></a>
-    <a href='#' target='new'><span class='iconsp' title='Calendario'><img src="img/calendar.svg" alt="" style="color: white;"><i class='fa fa-calendar' aria-hidden='true'></i></span></a>
-    <a href='https://www.tlalnepantla.tecnm.mx/directorio/' target='new'><span class='iconsp' title='Directorio'><img src="img/contacto.svg" alt=""><i class='fa fa-contact' aria-hidden='true'></i></span></a>
-    <!-- <a href='https://www.tlalnepantla.tecnm.mx/' target='new'><span class='iconsp' title='TecNM ITTLA'><img src="img/pagittla.svg" alt=""><i class='fa fa-ittla' aria-hidden='true'></i></span></a>   -->
-    <a href='http://sii.ittla.edu.mx/' target='new'><span class='iconsp' title='Sii'><img src="img/sii.svg" alt=""><i class='fa fa-sii' aria-hidden='true'></i></span></a>
-    <span class="iconsp"  title="Acesibilidad"><i class="fa fa-eye-slash" aria-hidden="true"></i></span>
-    <span class="iconsp ojorojo" id="redne"  title="Contraste"><i class="fa fa fa-adjust" aria-hidden="true"></i></span>
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
+
+        <div class="row_iconhead">    
+    <a href='https://www.tlalnepantla.tecnm.mx/' target='new'><span class='iconsp' title='TecNM ITTLA'><img src="img/ittlapag.png" alt=""><i class='fa fa-ittla' aria-hidden='true'></i></span></a>  
+    <a href='http://sii.ittla.edu.mx/' target='new'><span class='iconsp' title='Sii'><img src="img/favicon-32x32.png" alt=""><i class='fa fa-sii' aria-hidden='true'></i></span></a>
+    <a href='https://login.microsoftonline.com/' target='new'><span class='iconsp' title='Correo'><img src="img/outlookim.png" alt=""><i class='fa fa-envelope' aria-hidden='true'></i></span></a>
+    <a href='https://www.tlalnepantla.tecnm.mx/directorio/' target='new'><span class='iconsp' title='Directorio'><img src="img/directorio.png" alt=""><i class='fa fa-contact' aria-hidden='true'></i></span></a>
     </div>
+    <a class='flotante' href='https://www.facebook.com/ITTLA/' ><img src='img/facebook.svg' border="0"/></a>
     </div>
         </section>
-</header>
+
+        <!--Menu-->
+
+        <div class="wrapper">
+            <nav>
+              <input type="checkbox" id="show-search">
+              <input type="checkbox" id="show-menu">
+              <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+              <div class="content">
+                <ul class="links">
+                    <li><a href="#">Inicio</a></li>
+                  <li>
+                    <a href="#" class="desktop-link">Alumnos<img src="img/arrow.svg" alt=""></a>
+                    <input type="checkbox" id="show-features">
+                    <label for="show-features">Alumnos</label>
+                    <ul>
+                      <li>
+                        <a href="#" class="desktop-link">Registro de aspirantes<img src="img/arrow.svg" alt=""></a>
+                        <input type="checkbox" id="show-items">
+                        <label for="show-items">Registro de aspirantes</label>
+                        <ul>
+                          <li><a href="#">- Solicitud de admisión</a></li>
+                          <li><a href="#">- Lista de aspirantes aceptados</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Aceptados</a></li>
+                      <li><a href="#">Asignación de tesis</a></li>
+                      <li><a href="#">Gestión del curso</a></li>
+                      <li><a href="#">Vinculación</a></li>
+                      <li><a href="#">Sustentación</a></li>
+                      <li><a href="#">Seguimiento a Egresados</a></li>
+                      <li><a href="#">Proyectos</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-link">Docentes<img src="img/arrow.svg" alt=""></a>
+                    <input type="checkbox" id="show-services">
+                    <label for="show-services">Docentes</label>
+                    <ul>
+                      <li><a href="#">Alta a un docente</a></li>
+                      <li><a href="#">Archivos</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-link">Productividad<img src="img/arrow.svg" alt=""></a>
+                    <input type="checkbox" id="show-services">
+                    <label for="show-services">Productividad</label>
+                    <ul>
+                      <li><a href="#">Articulos</a></li>
+                      <li><a href="#">Congresos</a></li>
+                      <li><a href="#">Patentes</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Mi calendario</a></li>
+                  <li><a href="#">Aspirantes</a></li>
+                  <li><a href="#">Cerrar sesión</a></li>
+                </ul>
+              </div>
+              <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+              <form action="#" class="search-box">
+                <input type="text" placeholder="Type Something to Search..." required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+              </form>
+            </nav>
+          </div>
+          </header>
+
 
 <div class="content">
-    <h1 class="logo">Lista de <span>Aspirantes</span></h1>
+    <h1 class="logo">LISTA DE<span> ACEPTADOS</span></h1>
     <div class="contact-wrapper">
         <div class="contact-form">
             <!-- <h3>DATOS PERSONALES</h3> -->
