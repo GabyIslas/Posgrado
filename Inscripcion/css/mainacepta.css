@@ -1,15 +1,62 @@
 *{
-    box-sizing: border-box;
-}
-
-body{
-    background: #F4FAF6;
-    color: #000;
-    font-family: 'Quicksand', sans-serif;
+    margin:0;
     padding: 0;
-    font-size: 18px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+   }
+
+   body{
+    font-family: arial, helvetica, 'Poppins', sans-serif;
+    background: #e8e8e8;
+    font-size: 25px;
 }
 
+ /*Boton flotante*/
+
+ .flotante {
+    display:scroll;
+        position:fixed;
+        bottom:320px;
+        right:0px;
+}
+
+   /* Encabezado e iconos */
+
+   .iconos_container{
+    display: flex;
+    background-color: #F4FAF6;
+    padding: 10px 30px 0 10px;
+    margin: 0;
+    overflow: hidden;
+   }
+
+   .iconos_container .imgicono{
+        padding: 0 0 0 0;
+        background: #F4FAF6;
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+       }
+
+   .row_iconhead{
+    background-color: #F4FAF6;
+    padding: 0 230px;
+   }
+
+   .row_iconhead .botoncerrar{
+    padding: 0 100px 0;
+    font-size: 17px;
+    text-decoration: underline;
+    color: #000;
+   }
+
+   body{
+       font-family: arial, helvetica, 'Poppins', sans-serif;
+       background: #e8e8e8;
+       font-size: 25px;
+   }
+   
    /* Menu */
    .wrapper{
     background: #000;
@@ -268,37 +315,7 @@ body{
     font-size: 45px;
     margin: 5px 0;
   }
-  
 
-/*Encabezado*/
-
-*{
-    margin:0;
-    padding: 0;
-    grid-template-columns: 1fr 1fr;
-
-   }
-
-   .iconos_container{
-    display: flex;
-    background-color: #F4FAF6;
-    padding: 10px 30px 0 10px;
-    margin: 0;
-    overflow: hidden;
-   }
-
-   .iconos_container .imgicono{
-        padding: 0 0 0 0;
-        background: #F4FAF6;
-        margin: 0;
-        overflow: hidden;
-        display: flex;
-       }
-
-   .row_iconhead{
-    background-color: #F4FAF6;
-    padding: 0 200px;
-   }
 
    /* Datos*/
 
